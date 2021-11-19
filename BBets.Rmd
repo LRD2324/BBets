@@ -41,8 +41,20 @@ The function will be given a class_size by number of students, odds, and Number_
 ## the standard deviation and a 95% confidence interval for their earnings?
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
-
-
+  
+```{r}
+results <- (as.numeric (1:200))
+for(i in results){
+  results[i] <- BrLw(35, 2, 637)
+}
+t.test(results)
+s.results = sort(results)
+hist(results)
+hist(s.results)
+```
+  
+The 95% confidence interval of Brownlow's earnings ranges from 208 to 328
+  
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
 
 
