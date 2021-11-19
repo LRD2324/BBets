@@ -94,4 +94,6 @@ The bet would be fair only if the class size was decreased to 28 or 29 students.
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
-
+  
+We used the hist() function to create a histogram that displayed a deiscernable 95% confidence interval. We then determined the "fairness" of the bet in relation to the alteration of the size of the class. I learned how to apply defaults to run the BrLw function so we could avoid typing all the numerical variables in parenthesis. Variables could be altered using the function in a manner such as BrLw(odds=x) where x is replaced by a number.
+  
