@@ -77,14 +77,20 @@ hist(s.results)
 # What size of class makes the 2:1 bet fair?  Use manipulation of number of Students to tune Brownlows earnings to zero.
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
-
-
-
-
-
-
-
-
+  
+```{r}
+results <- (as.numeric (1:200))
+for(i in results){
+  results[i] <- BrLw(29, 2, 637)
+}
+t.test(results)
+s.results = sort(results)
+hist(results)
+hist(s.results)
+```
+  
+The bet would be fair only if the class size was decreased to 28 or 29 students. This was found using trial and error. Decreasing the number of students decreases the amount of birthdays which decreases the probability of two students sharing the same birthday. The 95% confidence interval is -35 to 103.
+  
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
